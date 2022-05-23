@@ -25,6 +25,7 @@ public class OrderController {
 	
 	@GetMapping(value = "/allorder", produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<Order> getAllOrders() {
+		System.out.println("get all orders");
 		return orderService.getAllOrders();
 	}
 	
